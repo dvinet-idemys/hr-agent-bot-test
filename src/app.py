@@ -122,13 +122,13 @@ async def health_check():
 
 if __name__ == "__main__":
     # Original Teams app start (commented out)
-    # asyncio.run(app.start())
+    asyncio.run(app.start())
 
     # FastAPI server start
-    logger.info("Starting HR Agent Bot FastAPI server...")
-    uvicorn.run(
-        fastapi_app,
-        host="0.0.0.0",
-        port=10000,
-        log_level="info"
-    )
+    # logger.info("Starting HR Agent Bot FastAPI server...")
+    # uvicorn.run(
+    #     fastapi_app,
+    #     host="0.0.0.0",
+    #     port=10000,
+    #     log_level="info"
+    # )
